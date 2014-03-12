@@ -1,5 +1,5 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-</body>
+	<head>
+		<meta http-equiv="Refresh" content="0; URL=${pageContext.request.contextPath}/index.htm">
+	</head>
 </html>
