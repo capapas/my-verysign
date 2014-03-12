@@ -29,11 +29,8 @@
 
 		<property name="annotatedClasses">
 			<list>
-				<value>org.bitbucket.model.Address</value>
-				<value>org.bitbucket.model.Parcel</value>
-				<value>org.bitbucket.model.Delivery</value>		
-				<value>org.bitbucket.model.Person</value>
-				<value>org.bitbucket.model.Roles</value>
+				<value>org.esgi.model.Person</value>
+				<value>org.esgi.model.Roles</value>
 			</list>
 		</property>
 
@@ -50,7 +47,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/MyVerySign" />
 		<property name="username" value="root" />
-		<property name="password" value="" />
+		<property name="password" value="miirmoze" />
 	</bean>
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>
