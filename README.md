@@ -3,7 +3,7 @@ My Very Sign
 
 ##Installation
 
-Copy config-db.xml to config-db.xml.dist
+Copy db-config.xml.dist to db-config.xml.dist
 
 ```bash
 $ mv src/main/webapp/WEB-INF/db-config.xml.dist mv src/main/webapp/WEB-INF/db-config.xml
