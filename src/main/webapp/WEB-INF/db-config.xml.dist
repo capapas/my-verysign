@@ -22,7 +22,7 @@
 			    <prop key="current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</prop>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">validate</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 				
 			</props>
 		</property>
@@ -31,6 +31,7 @@
 			<list>
 				<value>org.esgi.model.Person</value>
 				<value>org.esgi.model.Roles</value>
+				<value>org.esgi.model.Certificat</value>
 			</list>
 		</property>
 
