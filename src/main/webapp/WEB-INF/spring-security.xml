@@ -23,12 +23,12 @@
 
 				users-by-username-query="
 					SELECT username, password, enabled 
-					FROM person
+					FROM Person
 					WHERE username=?"
 
 				authorities-by-username-query="
 					SELECT p.username, r.authority
-					FROM person p, roles r 
+					FROM Person p, Roles r
 					WHERE p.id = r.id and p.username=?" />
 		</authentication-provider>
 	</authentication-manager>

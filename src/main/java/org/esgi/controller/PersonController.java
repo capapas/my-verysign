@@ -17,15 +17,16 @@ public class PersonController {
 	@Autowired
 	private PersonDao personDao;
 
-	/**
-	 * TODO remove this until method (one days ...)
-	 * @param model
-	 * @return
-	 */
-	@RequestMapping(value = "/person", method = RequestMethod.GET)
-	public String printUser(ModelMap model) {
+    @RequestMapping(value = "/add-cert", method = RequestMethod.GET)
+    public String addCert(ModelMap model) {
         Person degree = personDao.findById(1);
         System.out.println(degree.getMail());
-        return "contact";
-	}
+        return "addCert";
+    }
+
+
+    @RequestMapping(value = "/add-cert", method = RequestMethod.POST)
+    public String addCertPost(ModelMap model) {
+       return "listCert";
+    }
 }

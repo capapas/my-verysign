@@ -29,11 +29,8 @@
 
 		<property name="annotatedClasses">
 			<list>
-				<value>org.bitbucket.model.Address</value>
-				<value>org.bitbucket.model.Parcel</value>
-				<value>org.bitbucket.model.Delivery</value>		
-				<value>org.bitbucket.model.Person</value>
-				<value>org.bitbucket.model.Roles</value>
+				<value>org.esgi.model.Person</value>
+				<value>org.esgi.model.Roles</value>
 			</list>
 		</property>
 
