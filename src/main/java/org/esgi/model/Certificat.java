@@ -32,16 +32,16 @@ public class Certificat implements Serializable
     @Column(nullable = false)
     private String email;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String startValidity;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String endValidity;
 
     @Column(nullable = false)
     private Boolean revocate = false;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String certName;
 
     @Column(nullable = true)
