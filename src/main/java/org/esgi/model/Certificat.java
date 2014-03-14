@@ -42,7 +42,10 @@ public class Certificat implements Serializable
     private Boolean revocate = false;
 
     @Column(nullable = false)
-    private Boolean certName;
+    private String certName;
+
+    @Column(nullable = true)
+    private String content;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -128,11 +131,19 @@ public class Certificat implements Serializable
         this.revocate = revocate;
     }
 
-    public Boolean getCertName() {
+    public String getCertName() {
         return certName;
     }
 
-    public void setCertName(Boolean certName) {
+    public void setCertName(String certName) {
         this.certName = certName;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }
