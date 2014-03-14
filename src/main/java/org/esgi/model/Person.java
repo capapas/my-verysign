@@ -1,14 +1,12 @@
 package org.esgi.model;
 
+import org.hibernate.mapping.Set;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 /**
  * this class design standard user of the applications
@@ -59,6 +57,9 @@ public class Person implements Serializable {
 
 	@Column(length = 32)
 	private String mobilePhone;
+
+    @OneToMany(mappedBy = "person")
+    private List<Certificat> certificats;
 
 
 	// =========================================================================
@@ -141,5 +142,11 @@ public class Person implements Serializable {
 		this.mobilePhone = mobilePhone;
 	}
 
+    public List<Certificat> getCertificats() {
+        return certificats;
+    }
 
+    public void setCertificats(List<Certificat> certificats) {
+        this.certificats = certificats;
+    }
 }

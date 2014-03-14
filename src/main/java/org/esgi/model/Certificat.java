@@ -47,6 +47,9 @@ public class Certificat implements Serializable
     @Column(nullable = true)
     private String content;
 
+    @ManyToOne(optional = false)
+    private Person person;
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }
@@ -145,5 +148,13 @@ public class Certificat implements Serializable
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 }
