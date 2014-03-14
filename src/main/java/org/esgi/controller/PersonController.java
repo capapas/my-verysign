@@ -1,6 +1,8 @@
 package org.esgi.controller;
 
 import org.esgi.dao.PersonDao;
+import org.esgi.model.Ca;
+import org.esgi.model.Certificat;
 import org.esgi.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,4 +31,23 @@ public class PersonController {
     public String addCertPost(ModelMap model) {
        return "listCert";
     }
+
+    @RequestMapping(value = "/test-cert", method = RequestMethod.GET)
+    public String testAddCert(ModelMap model) {
+
+        Certificat certificat = new Certificat();
+        certificat.setCertName("toto12");
+        certificat.setCommonName("toto12");
+        certificat.setCompagny("toto12");
+        certificat.setCountryName("FR");
+        certificat.setEmail("maxime.horcholl12e@gmail.com");
+        certificat.setSection("IT");
+        certificat.setState("Paris");
+
+        Ca ca = new Ca();
+        certificat = ca.generateCert(certificat);
+
+        return "index";
+    }
+
 }
