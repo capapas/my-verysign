@@ -15,8 +15,12 @@
                 <ul class="nav pull-right">
                     <% if (SecurityContextHolder.getContext().getAuthentication().getPrincipal() != null) { %>
                     <li class="divider-vertical">
-                        <a href="${pageContext.request.contextPath}/add-cert.htm" class="dropdown-toggle"
-                           data-toggle="dropdown">Generer un certificat<b class="caret"></b></a>
+                        <a href="${pageContext.request.contextPath}/add-cert.htm">Generer un certificat </a>
+                    </li>
+                    <% } %>
+                    <% if (SecurityContextHolder.getContext().getAuthentication().getPrincipal() != null) { %>
+                    <li class="divider-vertical">
+                        <a href="${pageContext.request.contextPath}/list-cert.htm">Liste de mes certificats </a>
                     </li>
                     <% } %>
                     <li class="dropdown">

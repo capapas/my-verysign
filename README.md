@@ -15,6 +15,6 @@ Change database credidentials on config-db.xml
     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
     <property name="url" value="jdbc:mysql://localhost:3306/MyVerySign" />
     <property name="username" value="root" />
-    <property name="password" value="mhor" />
+    <property name="password" value="" />
 </bean>
 ```

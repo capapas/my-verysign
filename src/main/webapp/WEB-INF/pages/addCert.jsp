@@ -28,7 +28,7 @@
             *</label>
 
         <div class="controls">
-            <input type="text" id="certname" value="certificat_1" required="true">
+            <input type="text" id="certname" name="certname" value="certificat_1" required="true">
         </div>
     </div>
 
@@ -37,7 +37,7 @@
         <label class="control-label" for="country">Code Pays * (2 lettres maximum)</label>
 
         <div class="controls">
-            <input type="text" id="country" value="Exemple : FR" required="true" maxlength="2">
+            <input type="text" id="country" name="country" value="Exemple : FR" required="true" maxlength="2">
         </div>
     </div>
 
@@ -46,7 +46,7 @@
         <label class="control-label" for="state">Votre Etat ou province *</label>
 
         <div class="controls">
-            <input type="text" id="state" value="Exemple : Monaco" required="true">
+            <input type="text" id="state" name="state" value="Exemple : Monaco" required="true">
         </div>
     </div>
 
@@ -55,7 +55,7 @@
         <label class="control-label" for="city">Votre ville *</label>
 
         <div class="controls">
-            <input type="text" id="city" value="Exemple : Paris" required="true">
+            <input type="text" id="city" name="city" value="Exemple : Paris" required="true">
         </div>
     </div>
 
@@ -64,7 +64,7 @@
         <label class="control-label" for="compagny">Votre entreprise / societe (vide si il n'y en a pas)</label>
 
         <div class="controls">
-            <input type="text" id="compagny" value="Exemple : Natysphere">
+            <input type="text" id="compagny" name="compagny" value="Exemple : Natysphere">
         </div>
     </div>
 
@@ -73,7 +73,7 @@
         <label class="control-label" for="section">Section de votre compagnie (vide si il n'y en a pas)</label>
 
         <div class="controls">
-            <input type="text" id="section" value="Exemple : Entertainment">
+            <input type="text" id="section" name="section" value="Exemple : Entertainment">
         </div>
     </div>
 
@@ -82,7 +82,7 @@
         <label class="control-label" for="commonName">Votre nom *</label>
 
         <div class="controls">
-            <input type="text" id="commonName" value="<%=person.getLastname()%>">
+            <input type="text" id="commonName" name="commonName" value="<%=person.getLastname()%>">
         </div>
     </div>
 
@@ -91,7 +91,7 @@
         <label class="control-label" for="email">Votre Email *</label>
 
         <div class="controls">
-            <input type="text" id="email" placeholder="Email" value="<%=person.getMail()%>">
+            <input type="text" id="email" name="email" placeholder="Email" value="<%=person.getMail()%>">
         </div>
     </div>
 
